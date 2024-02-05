@@ -8,6 +8,9 @@ import SectionThree from '../components/sectionthree/SectionThree';
 import SectionFive from '../components/SectionFive/SectionFive';
 import SectionSix from '../components/SectionSix.jsx/SectionSix';
 import SectionSeven from '../components/SectionSeven/SectionSeven';
+import SectionNine from '../components/SectionNine/SectionNine';
+import Ten from '../components/Ten/Ten';
+import Footer from '../components/Footer/Footer';
 
 
 
@@ -33,6 +36,9 @@ const App = () => {
       <SectionFive></SectionFive>
       <SectionSix></SectionSix>
       <SectionSeven></SectionSeven>
+      <SectionNine></SectionNine>
+      <Ten></Ten>
+      <Footer></Footer>
       </div>
     </>
   );

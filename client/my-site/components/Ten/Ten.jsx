@@ -45,7 +45,7 @@ function a11yProps(index) {
   };
 }
 
-export default function Eight() {
+export default function Ten() {
   const [value, setValue] = React.useState(0);
   const [data, setData] = useState([]);
   const [seconddata, setSecondData] = useState([]);
@@ -66,7 +66,8 @@ export default function Eight() {
 
   return (
     <>
-    <Box className='ml-[50px]' sx={{ width: '90%'  }}>
+    <div className='mt-[-650px] ml-[400px]'>
+    <Box className='ml-[50px]' sx={{ width: '85%'  }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="
@@ -94,7 +95,7 @@ For Men" {...a11yProps(0)} />
       <SwiperSlide>
        {
         data.slice(0,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$100</span></p>
@@ -105,7 +106,7 @@ For Men" {...a11yProps(0)} />
       </SwiperSlide>
       <SwiperSlide> {
         data.slice(1,2).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$100</span></p>
@@ -115,7 +116,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(2,3).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$110</span></p>
@@ -125,7 +126,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(3,4).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$120</span></p>
@@ -135,7 +136,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(4,5).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$130</span></p>
@@ -145,7 +146,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(5,6).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$140</span></p>
@@ -155,7 +156,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(6,7).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$150</span></p>
@@ -165,7 +166,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(7,8).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$160</span></p>
@@ -186,7 +187,7 @@ For Men" {...a11yProps(0)} />
       <SwiperSlide>
        {
         seconddata.slice(9,10).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$170</span></p>
@@ -197,7 +198,7 @@ For Men" {...a11yProps(0)} />
       </SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(10,11).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$180</span></p>
@@ -207,7 +208,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(11,10).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$190</span></p>
@@ -217,7 +218,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(1,2).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$200</span></p>
@@ -227,7 +228,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(3,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$210</span></p>
@@ -237,7 +238,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(4,5).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$220</span></p>
@@ -247,7 +248,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(5,6).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$230</span></p>
@@ -257,7 +258,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(10,11).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$240</span></p>
@@ -278,7 +279,7 @@ For Men" {...a11yProps(0)} />
       <SwiperSlide>
        {
         seconddata.slice(0,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$250</span></p>
@@ -289,7 +290,7 @@ For Men" {...a11yProps(0)} />
       </SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(4,3).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$260</span></p>
@@ -299,7 +300,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(9,8).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$270</span></p>
@@ -309,7 +310,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(0,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$280</span></p>
@@ -319,7 +320,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(1,2).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$290</span></p>
@@ -329,7 +330,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(2,3).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$300</span></p>
@@ -339,7 +340,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(3,4).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$310</span></p>
@@ -349,7 +350,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(4,5).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$320</span></p>
@@ -370,7 +371,7 @@ For Men" {...a11yProps(0)} />
       <SwiperSlide>
        {
        data.slice(4,5).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$330</span></p>
@@ -381,7 +382,7 @@ For Men" {...a11yProps(0)} />
       </SwiperSlide>
       <SwiperSlide> {
         data.slice(5,6).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$340</span></p>
@@ -391,7 +392,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(6,7).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$350</span></p>
@@ -401,7 +402,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(7,8).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$360</span></p>
@@ -411,7 +412,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(0,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$370</span></p>
@@ -421,7 +422,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(1,2).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$380</span></p>
@@ -431,7 +432,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(2,3).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$390</span></p>
@@ -441,7 +442,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(3,4).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$400</span></p>
@@ -462,7 +463,7 @@ For Men" {...a11yProps(0)} />
       <SwiperSlide>
        {
         seconddata.slice(7,8).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$410</span></p>
@@ -473,7 +474,7 @@ For Men" {...a11yProps(0)} />
       </SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(6,7).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$420</span></p>
@@ -483,7 +484,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(5,6).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$430</span></p>
@@ -493,7 +494,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(3,4).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$440</span></p>
@@ -503,7 +504,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(2,3).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$450</span></p>
@@ -513,7 +514,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(1,2).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$460</span></p>
@@ -523,7 +524,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(0,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>470</span></p>
@@ -533,7 +534,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         seconddata.slice(4,5).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$480</span></p>
@@ -554,7 +555,7 @@ For Men" {...a11yProps(0)} />
       <SwiperSlide>
        {
         data.slice(0,1).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$500</span></p>
@@ -565,7 +566,7 @@ For Men" {...a11yProps(0)} />
       </SwiperSlide>
       <SwiperSlide> {
         data.slice(1,2).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$510</span></p>
@@ -575,7 +576,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(2,3).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$520</span></p>
@@ -585,7 +586,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(3,4).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$530</span></p>
@@ -595,7 +596,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(4,5).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$540</span></p>
@@ -605,7 +606,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(5,6).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$550</span></p>
@@ -615,7 +616,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(6,7).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$560</span></p>
@@ -625,7 +626,7 @@ For Men" {...a11yProps(0)} />
        }</SwiperSlide>
       <SwiperSlide> {
         data.slice(7,8).map(d=>
-          <div className='w-[500px] h-[400px] border'>
+          <div className='w-[350px] h-[400px] border'>
           <img className='w-[200px] h-[150px]' src={d.img} alt="" />
           <h1 className='font-bold text-2xl ml-[20px]'>{d.title}</h1>
             <p className='font-bold text-xl ml-[20px]'>Price: <span className='text-red-500 text-lg font-bold'>$570</span></p>
@@ -637,7 +638,7 @@ For Men" {...a11yProps(0)} />
     </Swiper>
       </CustomTabPanel>
     </Box>
-    <div className='flex  gap-[10px] ml-[50px]'>
+    {/* <div className='flex  gap-[10px] ml-[50px]'>
         <img className='w-[350px] h-[200px]' src="https://i.ibb.co/znv362C/banner-1.jpg" alt="" />
         <img className='w-[350px] h-[200px]' src="https://i.ibb.co/y0d9fSQ/banner-2.jpg" alt="" />
     </div>
@@ -651,6 +652,7 @@ For Men" {...a11yProps(0)} />
     </div>
     <div>
         <img className='ml-[50px] mt-[50px]' src="https://i.ibb.co/0yVMJXH/banner-3.jpg" alt="" />
+    </div> */}
     </div>
     </>
   );
